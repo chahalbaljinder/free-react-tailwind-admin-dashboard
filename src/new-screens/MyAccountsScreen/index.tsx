@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { WorldMap } from './components/WorldMap';
 import { StatsCards } from './components/StatsCards';
 import { AccountsTable } from './components/AccountsTable';
 import { AppSidebar } from './components/AppSidebar';
 import { AppHeader } from './components/AppHeader';
+import { CreateAccountModal } from './components/CreateAccountModal';
 import Breadcrumb from '../universal-components/navigation/Breadcrumb';
 import Button from '../universal-components/ui/Button';
 
 export const MyAccountsScreen: React.FC = () => {
+  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
+  
   const breadcrumbItems = [
     { label: 'Dashboard', href: '/dashboard' },
     { label: 'Organization details', href: '#' }
   ];
+
+  const handleCreateAccount = (accountData: any) => {
+    console.log('Creating account:', accountData);
+    // Here you would typically make an API call to create the account
+  };
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -48,6 +56,7 @@ export const MyAccountsScreen: React.FC = () => {
                   <Button 
                     variant="primary"
                     className="inline-flex items-center"
+                    onClick={() => setIsCreateModalOpen(true)}
                   >
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -81,6 +90,13 @@ export const MyAccountsScreen: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Create Account Modal */}
+      <CreateAccountModal
+        isOpen={isCreateModalOpen}
+        onClose={() => setIsCreateModalOpen(false)}
+        onSubmit={handleCreateAccount}
+      />
     </div>
   );
 };
