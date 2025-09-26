@@ -24,6 +24,7 @@ import SignInScreen from "./new-screens/SignInScreen";
 import ForgotPasswordScreen from "./new-screens/ForgotPasswordScreen";
 import CreateOrganizationScreen from "./new-screens/CreateOrganizationScreen";
 import OrganizationDetailsScreen from "./new-screens/OrganizationDetailsScreen";
+import EditOrganizationScreen from "./new-screens/EditOrganizationScreen";
 import UniversalComponentsDemo from "./new-screens/universal-components/UniversalComponentsDemo";
 
 export default function App() {
@@ -72,6 +73,7 @@ export default function App() {
           <Route path="/new-screens/forgot-password" element={<ForgotPasswordScreen />} />
           <Route path="/new-screens/create-organization" element={<CreateOrganizationScreen />} />
           <Route path="/new-screens/organization-details" element={<OrganizationDetailsScreen />} />
+          <Route path="/new-screens/edit-organization" element={<EditOrganizationScreen />} />
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
