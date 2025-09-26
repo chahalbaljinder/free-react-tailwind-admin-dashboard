@@ -27,6 +27,7 @@ import OrganizationDetailsScreen from "./new-screens/OrganizationDetailsScreen";
 import EditOrganizationScreen from "./new-screens/EditOrganizationScreen";
 import MyAccountsScreen from "./new-screens/MyAccountsScreen";
 import AccountDetailScreen from "./new-screens/AccountDetailScreen";
+import EditAccountScreen from "./new-screens/EditAccountScreen";
 import UniversalComponentsDemo from "./new-screens/universal-components/UniversalComponentsDemo";
 
 export default function App() {
@@ -78,6 +79,7 @@ export default function App() {
           <Route path="/new-screens/edit-organization" element={<EditOrganizationScreen />} />
           <Route path="/new-screens/my-accounts" element={<MyAccountsScreen />} />
           <Route path="/new-screens/account-detail" element={<AccountDetailScreen />} />
+          <Route path="/new-screens/edit-account" element={<EditAccountScreen />} />
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
