@@ -51,23 +51,22 @@ const Button = ({ children, className = "" }: {
   </button>
 );
 
-export default function SignInScreen() {
+export default function ForgotPasswordScreen() {
   const [isChecked, setIsChecked] = useState(false);
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
   return (
     <div className="relative p-6 bg-white z-1 dark:bg-gray-900 sm:p-0">
       <div className="relative flex flex-col justify-center w-full h-screen lg:flex-row dark:bg-gray-900 sm:p-0">
-        {/* Left Side - Sign In Form */}
+        {/* Left Side - Forgot Password Form */}
         <div className="flex flex-col flex-1">
           <div className="w-full max-w-md pt-10 mx-auto">
             <Link
-              to="/"
+              to="/new-screens/signin"
               className="inline-flex items-center text-sm text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
             >
               <ChevronLeftIcon className="w-4 h-4 mr-2" />
-              Back to dashboard
+              Back to Sign-in
             </Link>
           </div>
 
@@ -77,10 +76,10 @@ export default function SignInScreen() {
               {/* Title */}
               <div className="mb-8">
                 <h1 className="text-3xl font-semibold text-gray-900 mb-2 dark:text-white">
-                  Sign In
+                  Forgot Your Password ?
                 </h1>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Enter your email and password to sign in!
+                  Enter your e-mail address and we will send you a link to reset your password
                 </p>
               </div>
 
@@ -99,20 +98,7 @@ export default function SignInScreen() {
                   />
                 </div>
 
-                {/* Password Input */}
-                <div>
-                  <Label>
-                    Password<span className="text-red-500 ml-1">*</span>
-                  </Label>
-                  <Input
-                    type="password"
-                    placeholder="hello123"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
-
-                {/* Remember Me & Forgot Password */}
+                {/* Keep me logged in & Forgot Password */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <Checkbox checked={isChecked} onChange={setIsChecked} />
@@ -121,7 +107,7 @@ export default function SignInScreen() {
                     </span>
                   </div>
                   <Link
-                    to="/new-screens/forgot-password"
+                    to="/new-screens/signin"
                     className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400"
                   >
                     Forgot password?
