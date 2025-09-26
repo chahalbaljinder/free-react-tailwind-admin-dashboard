@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import GridShape from "../../components/common/GridShape";
 import ThemeTogglerTwo from "../../components/common/ThemeTogglerTwo";
+import ResetPasswordModal from "../components/ResetPasswordModal";
 
 const ChevronLeftIcon = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,6 +56,7 @@ export default function SignInScreen() {
   const [isChecked, setIsChecked] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showResetModal, setShowResetModal] = useState(false);
 
   return (
     <div className="relative p-6 bg-white z-1 dark:bg-gray-900 sm:p-0">
@@ -120,12 +122,13 @@ export default function SignInScreen() {
                       Keep me logged in
                     </span>
                   </div>
-                  <Link
-                    to="/new-screens/forgot-password"
+                  <button
+                    type="button"
+                    onClick={() => setShowResetModal(true)}
                     className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400"
                   >
                     Forgot password?
-                  </Link>
+                  </button>
                 </div>
 
                 {/* Sign In Button */}
@@ -176,6 +179,12 @@ export default function SignInScreen() {
           <ThemeTogglerTwo />
         </div>
       </div>
+      
+      {/* Reset Password Modal */}
+      <ResetPasswordModal 
+        isOpen={showResetModal} 
+        onClose={() => setShowResetModal(false)} 
+      />
     </div>
   );
 }
