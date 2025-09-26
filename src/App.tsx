@@ -22,6 +22,7 @@ import Home from "./pages/Dashboard/Home";
 // New Screens
 import SignInScreen from "./new-screens/SignInScreen";
 import ForgotPasswordScreen from "./new-screens/ForgotPasswordScreen";
+import CreateOrganizationScreen from "./new-screens/CreateOrganizationScreen";
 import UniversalComponentsDemo from "./new-screens/universal-components/UniversalComponentsDemo";
 
 export default function App() {
@@ -68,6 +69,7 @@ export default function App() {
           {/* New Screens - Standalone */}
           <Route path="/new-screens/signin" element={<SignInScreen />} />
           <Route path="/new-screens/forgot-password" element={<ForgotPasswordScreen />} />
+          <Route path="/new-screens/create-organization" element={<CreateOrganizationScreen />} />
 
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
