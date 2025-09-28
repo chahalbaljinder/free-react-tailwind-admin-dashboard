@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router";
-import GridShape from "../../components/common/GridShape";
-import ThemeTogglerTwo from "../../components/common/ThemeTogglerTwo";
+import { Link } from "../_internal/router/Link";
+import GridShape from "../_internal/components/common/GridShape";
+import ThemeTogglerTwo from "../_internal/components/common/ThemeTogglerTwo";
 import ResetPasswordModal from "../components/ResetPasswordModal";
 
 const ChevronLeftIcon = ({ className }: { className?: string }) => (

@@ -1,6 +1,18 @@
-# New Screens - Figma to React Conversion Guide
+# New Screens - Standalone Package
 
-This folder contains screens converted from Figma designs using the existing components and elements from the codebase.
+This package contains all the new screens that can be used independently without external dependencies. Originally converted from Figma designs, now made completely portable.
+
+## Features
+
+✅ **Self-contained**: No external imports outside the package  
+✅ **Theme Support**: Built-in dark/light theme context  
+✅ **Responsive Design**: Mobile-first Tailwind CSS  
+✅ **TypeScript**: Full type safety  
+✅ **Modular**: Export individual screens or the complete package  
+
+## Standalone Export Ready
+
+This package is designed to be completely portable. You can copy the entire `new-screens` folder to any React project and it will work independently.
 
 ## Available Components Library
 

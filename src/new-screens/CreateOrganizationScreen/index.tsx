@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import React from 'react';
+import { Link } from "../_internal/router/Link";
 
 const ChevronDownIcon = ({ className }: { className?: string }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">

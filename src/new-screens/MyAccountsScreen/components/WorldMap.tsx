@@ -1,5 +1,5 @@
 import React from 'react';
-import CountryMap from '../../../components/ecommerce/CountryMap';
+import CountryMap from '../../_internal/components/ecommerce/CountryMap';
 
 export const WorldMap: React.FC = () => {
   return (
