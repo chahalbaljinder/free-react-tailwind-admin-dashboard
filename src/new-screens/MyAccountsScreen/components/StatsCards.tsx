@@ -15,7 +15,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, value, subtitle }) => 
       case 'High Risk':
         return 'text-red-600';
       case 'Total Value':
-        return 'text-blue-600';
+        return 'text-blue-900';
       default:
         return 'text-gray-900';
     }
@@ -26,7 +26,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, title, value, subtitle }) => 
       case 'AI Health Score':
         return 'text-orange-500';
       case 'Total Value':
-        return 'text-blue-500';
+        return 'text-blue-900';
       default:
         return 'text-gray-500';
     }

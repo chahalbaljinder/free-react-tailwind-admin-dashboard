@@ -31,7 +31,7 @@ const Input = ({
     placeholder={placeholder}
     value={value}
     onChange={onChange}
-    className={`w-full px-4 py-3 text-gray-700 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${className}`}
+    className={`w-full px-4 py-3 text-gray-700 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-blue-900 ${className}`}
   />
 );
 
@@ -50,7 +50,7 @@ const Select = ({
     <select
       value={value}
       onChange={onChange}
-      className="w-full px-4 py-3 text-gray-700 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 appearance-none cursor-pointer"
+      className="w-full px-4 py-3 text-gray-700 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-blue-900 appearance-none cursor-pointer"
     >
       <option value="">{placeholder}</option>
       {options?.map((option) => (
@@ -83,7 +83,7 @@ const Button = ({
 }) => {
   const baseClasses = "px-6 py-3 rounded-lg font-medium focus:outline-none focus:ring-2 transition-colors";
   const variants = {
-    primary: "text-white bg-indigo-900 hover:bg-indigo-800 focus:ring-indigo-500",
+    primary: "text-white bg-blue-900 hover:bg-blue-800 focus:ring-blue-500",
     secondary: "text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:ring-gray-500"
   };
 
@@ -154,7 +154,7 @@ export default function EditOrganizationScreen() {
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo and Brand */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-indigo-900 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">C</span>
             </div>
             <div>
@@ -237,7 +237,7 @@ export default function EditOrganizationScreen() {
                     value={formData.companyWebsite}
                     onChange={(e) => handleInputChange('companyWebsite', e.target.value)}
                   />
-                  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded">
+                  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-blue-100 text-blue-900 text-xs px-2 py-1 rounded">
                     ✨ AI Enhanced
                   </span>
                 </div>

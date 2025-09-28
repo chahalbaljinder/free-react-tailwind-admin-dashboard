@@ -25,7 +25,7 @@ const CustomCheckbox: React.FC<CustomCheckboxProps> = ({
         <div className={`
           w-5 h-5 rounded border-2 border-gray-300 transition-all duration-200
           ${checked 
-            ? 'bg-blue-500 border-blue-500' 
+            ? 'bg-blue-900 border-blue-900' 
             : 'bg-white border-gray-300 hover:border-gray-400'
           }
         `}>

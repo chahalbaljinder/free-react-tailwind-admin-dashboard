@@ -97,7 +97,7 @@ export const CreateAccountModal: React.FC<CreateAccountModalProps> = ({
                     placeholder="xyz.com"
                     required
                   />
-                  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-blue-900 text-white text-xs px-2 py-1 rounded">
                     AI Enhanced
                   </span>
                 </div>
@@ -310,7 +310,7 @@ export const CreateAccountModal: React.FC<CreateAccountModalProps> = ({
             </button>
             <button
               type="submit"
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+              className="px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 font-medium"
             >
               Create Account
             </button>

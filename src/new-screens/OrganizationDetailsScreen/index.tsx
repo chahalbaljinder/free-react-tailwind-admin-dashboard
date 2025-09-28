@@ -59,7 +59,7 @@ const Button = ({
 }) => {
   const baseClasses = "px-4 py-2 rounded-lg font-medium focus:outline-none focus:ring-2 transition-colors";
   const variants = {
-    primary: "text-white bg-blue-600 hover:bg-blue-700 focus:ring-blue-500",
+    primary: "text-white bg-blue-900 hover:bg-blue-800 focus:ring-blue-500",
     secondary: "text-gray-700 bg-white border border-gray-300 hover:bg-gray-50 focus:ring-gray-500",
     ghost: "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
   };
@@ -82,7 +82,7 @@ export default function OrganizationDetailsScreen() {
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo and Brand */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-indigo-900 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">C</span>
             </div>
             <div>
@@ -185,7 +185,7 @@ export default function OrganizationDetailsScreen() {
                   </label>
                   <Link 
                     to="#" 
-                    className="text-blue-600 hover:text-blue-700 hover:underline"
+                    className="text-blue-900 hover:text-blue-800 hover:underline"
                   >
                     https://your-company.com
                   </Link>

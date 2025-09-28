@@ -23,7 +23,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
       disabled={disabled || loading}
       className={`
         px-6 py-3 rounded-lg font-medium text-white
-        bg-blue-600 hover:bg-blue-700 focus:bg-blue-700
+        bg-blue-900 hover:bg-blue-800 focus:bg-blue-800
         focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
         disabled:bg-gray-400 disabled:cursor-not-allowed
         transition-all duration-200

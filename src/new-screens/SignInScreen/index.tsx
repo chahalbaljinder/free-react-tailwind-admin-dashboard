@@ -27,7 +27,7 @@ const Input = ({ type = "text", placeholder, value, onChange }: {
     placeholder={placeholder}
     value={value}
     onChange={onChange}
-    className="w-full px-4 py-3 text-gray-700 bg-white border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    className="w-full px-4 py-3 text-gray-700 bg-white border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-blue-900"
   />
 );
 
@@ -36,7 +36,7 @@ const Checkbox = ({ checked, onChange }: { checked: boolean; onChange: (checked:
     type="checkbox"
     checked={checked}
     onChange={(e) => onChange(e.target.checked)}
-    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+    className="w-4 h-4 text-blue-900 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
   />
 );
 
@@ -46,7 +46,7 @@ const Button = ({ children, className = "" }: {
 }) => (
   <button
     type="submit"
-    className={`w-full py-3 px-4 text-white bg-indigo-900 rounded-lg font-medium hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${className}`}
+    className={`w-full py-3 px-4 text-white bg-blue-900 rounded-lg font-medium hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
   >
     {children}
   </button>
@@ -125,7 +125,7 @@ export default function SignInScreen() {
                   <button
                     type="button"
                     onClick={() => setShowResetModal(true)}
-                    className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400"
+                    className="text-sm text-blue-900 hover:text-blue-800 dark:text-blue-400"
                   >
                     Forgot password?
                   </button>
@@ -145,7 +145,7 @@ export default function SignInScreen() {
                   Don't have an account? {" "}
                   <Link
                     to="/contact"
-                    className="text-blue-600 hover:text-blue-700 dark:text-blue-400"
+                    className="text-blue-900 hover:text-blue-800 dark:text-blue-400"
                   >
                     Contact Us
                   </Link>

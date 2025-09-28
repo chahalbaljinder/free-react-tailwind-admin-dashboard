@@ -29,9 +29,9 @@ export const RecentActivity: React.FC = () => {
       description: '',
       date: '1 week ago',
       type: 'meeting',
-      color: 'bg-blue-500',
+      color: 'bg-blue-900',
       icon: (
-        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+        <div className="w-2 h-2 bg-blue-900 rounded-full"></div>
       )
     },
     {

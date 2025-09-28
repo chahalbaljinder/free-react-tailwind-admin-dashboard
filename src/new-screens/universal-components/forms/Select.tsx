@@ -47,7 +47,7 @@ const Select: React.FC<SelectProps> = ({
     ? 'border-red-300 focus:border-red-500 focus:ring-red-500'
     : success
     ? 'border-green-300 focus:border-green-500 focus:ring-green-500'
-    : 'border-gray-300 focus:border-blue-500 focus:ring-blue-500';
+    : 'border-gray-300 focus:border-blue-900 focus:ring-blue-500';
 
   const widthClass = fullWidth ? 'w-full' : '';
 

@@ -14,7 +14,7 @@ const BrandSection: React.FC<BrandSectionProps> = ({
   return (
     <div className={`
       relative h-full min-h-screen
-      bg-gradient-to-br from-indigo-900 via-blue-900 to-indigo-800
+      bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800
       flex items-center justify-center
       ${className}
     `}>
@@ -28,7 +28,7 @@ const BrandSection: React.FC<BrandSectionProps> = ({
         {/* Logo/Icon */}
         <div className="mb-8">
           <div className="w-20 h-20 mx-auto bg-white rounded-2xl flex items-center justify-center shadow-lg">
-            <div className="text-2xl font-bold text-indigo-900">
+            <div className="text-2xl font-bold text-blue-900">
               {companyName.charAt(0)}
             </div>
           </div>
@@ -53,8 +53,8 @@ const BrandSection: React.FC<BrandSectionProps> = ({
       </div>
       
       {/* Additional Background Elements */}
-      <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500 opacity-10 rounded-full blur-2xl"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-indigo-500 opacity-10 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-900 opacity-10 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-blue-800 opacity-10 rounded-full blur-3xl"></div>
     </div>
   );
 };

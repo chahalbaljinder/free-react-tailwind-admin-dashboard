@@ -94,7 +94,7 @@ export const AppSidebar: React.FC<SidebarProps> = ({ isOpen = true }) => {
       {/* Logo Section */}
       <div className="px-6 py-6 border-b border-gray-200">
         <div className="flex items-center space-x-3">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">C</span>
           </div>
           <div>
@@ -115,7 +115,7 @@ export const AppSidebar: React.FC<SidebarProps> = ({ isOpen = true }) => {
                 href="#"
                 className={`flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-colors duration-150 ease-in-out ${
                   item.active
-                    ? 'bg-blue-50 text-blue-700'
+                    ? 'bg-blue-50 text-blue-900'
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                 }`}
               >
