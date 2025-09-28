@@ -14,3 +14,8 @@ export { Link } from './_internal/router/Link';
 
 // Export universal components
 export * from './universal-components';
+
+// Export route configurations
+export { ROUTES, SCREEN_DEFINITIONS, NAVIGATION_MENU, getBreadcrumbs, buildRoutePath } from './routes';
+export { default as routeConfig, navigationUtils } from './router-config';
+export { ALL_ROUTES, buildRoute, SCREEN_DESCRIPTIONS, SCREEN_COMPONENTS } from './route-map';
